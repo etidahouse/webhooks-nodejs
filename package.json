@@ -3,7 +3,7 @@
   "scripts": {
     "server": "ts-node src/server.ts",
     "client": "ts-node src/client.ts",
-    "all": "npm run server & npm run client",
+    "start": "npm run server & npm run client",
     "test": "ts-node src/test.ts",
     "update-deps": "npm update",
     "lint": "eslint 'src/**/*.{ts,tsx}'"
