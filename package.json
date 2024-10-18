@@ -3,7 +3,7 @@
   "scripts": {
     "server": "ts-node src/server.ts",
     "client": "ts-node src/client.ts",
-    "start": "npm run server & npm run client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
     "test": "ts-node src/test.ts",
     "update-deps": "npm update",
     "lint": "eslint 'src/**/*.{ts,tsx}'"
@@ -20,6 +20,7 @@
     "@eslint/js": "9.10.0",
     "@typescript-eslint/eslint-plugin": "8.5.0",
     "@typescript-eslint/parser": "8.5.0",
+    "concurrently": "9.0.1",
     "eslint": "9.10.0",
     "globals": "15.9.0",
     "typescript-eslint": "8.5.0"
